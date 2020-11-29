@@ -7,8 +7,7 @@ from functools import cmp_to_key
 URLstarter = 'https://open.kattis.com/problems/'
 partialIDs = []
 solvedIDs = []
-probDiffs = {'tgif': 3.1, 'moscowdream': 1.9, 'kolone': 2.7, 'parking': 1.8, 'boatparts': 1.5, 'cokolada': 2.3, 'modulo': 1.4, 'marko': 1.8, 'keytocrypto': 1.8,
-             'planina': 1.3, 'reconnaissance': 3.8, 'icpcteamselection': 2.8, 'knightjump': 2.4, 'decisions': 3.2, 'bard': 2.5, 'driver': 3.9, 'farey': 3.7}
+probDiffs = {}
 
 
 def extractDifficulty(itemID):
@@ -52,6 +51,25 @@ def readFiles():
     solvedIDs = extractProblems(solvedPath)
     partialPath = "/Users/ujjwalnadhani/Desktop/programming_problems/partial"
     partialIDs = extractProblems(partialPath)
+    readDiffFile()
+
+
+def readDiffFile():
+    global probDiffs
+    with open("diff.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            splitted = line.strip("\n").split(',')
+            if(len(splitted) == 2):
+                probDiffs[splitted[0]] = float(splitted[1])
+
+
+def writeDiffFile():
+    with open("diff.txt", "w") as f:
+        f.seek(0)
+        for key in probDiffs:
+            f.write(key + "," + str(probDiffs[key]) + "\n")
+        f.truncate()
 
 
 def extractProblems(mypath):
@@ -76,6 +94,7 @@ def createdSortedArrays():
     readFiles()
     solvedIDs = sortByDifficulty(solvedIDs)
     partialIDs = sortByDifficulty(partialIDs)
+    writeDiffFile()
 
 
 def updateReadMe():
@@ -108,4 +127,3 @@ def updateReadMe():
 
 
 updateReadMe()
-print(probDiffs)
