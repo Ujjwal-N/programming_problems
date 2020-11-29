@@ -123,7 +123,7 @@ def updateReadMe():
             f.write(printStr)
         f.write("\n")
         f.write(
-            "The problems in the partially solved list will move to the completely solved list eventually...")
+            "The problems in the \"partially solved list\" will move to the \"completely solved list\" eventually...")
 
 
 updateReadMe()
