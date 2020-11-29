@@ -78,7 +78,32 @@ def createdSortedArrays():
     partialIDs = sortByDifficulty(partialIDs)
 
 
-createdSortedArrays()
+def updateReadMe():
+    global solvedIDs
+    global partialIDs
+    createdSortedArrays()
+    with open("README.md", "r") as f:
+        lines = f.readlines()
+    with open("README.md", "w") as f:
+        f.seek(0)
+        for line in lines:
+            if line.strip("\n") != "## Problems Solved Completely":
+                f.write(line)
+            else:
+                break
+        f.truncate()
+        f.write("## Problems Solved Completely\n")
+        for sID in solvedIDs:
+            printStr = "* " + sID + ", difficulty: " + \
+                str(probDiffs[sID]) + "\n"
+            f.write(printStr)
+        f.write("## Problems Solved Partially\n")
+        for pID in partialIDs:
+            printStr = "* " + pID + ", difficulty: " + \
+                str(probDiffs[pID]) + "\n"
+            f.write(printStr)
+        f.write("The problems in the partially solved list will move onto the completely solved list eventually...")
+
+
+updateReadMe()
 print(probDiffs)
-print(solvedIDs)
-print(partialIDs)
