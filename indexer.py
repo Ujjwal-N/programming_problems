@@ -87,22 +87,24 @@ def updateReadMe():
     with open("README.md", "w") as f:
         f.seek(0)
         for line in lines:
-            if line.strip("\n") != "## Problems Solved Completely":
+            if not(line.startswith("## Problems Solved Completely")):
                 f.write(line)
             else:
                 break
         f.truncate()
-        f.write("## Problems Solved Completely\n")
+        f.write("## Problems Solved Completely(" + str(len(solvedIDs)) + ")\n")
         for sID in solvedIDs:
-            printStr = "* " + sID + ", difficulty: " + \
+            printStr = "* [" + sID + "](" + URLstarter + sID + "), difficulty: " + \
                 str(probDiffs[sID]) + "\n"
             f.write(printStr)
-        f.write("## Problems Solved Partially\n")
+        f.write("## Problems Solved Partially(" + str(len(partialIDs)) + ")\n")
         for pID in partialIDs:
-            printStr = "* " + pID + ", difficulty: " + \
+            printStr = "* [" + pID + "](" + URLstarter + pID + "), difficulty: " + \
                 str(probDiffs[pID]) + "\n"
             f.write(printStr)
-        f.write("The problems in the partially solved list will move onto the completely solved list eventually...")
+        f.write("\n")
+        f.write(
+            "The problems in the partially solved list will move to the completely solved list eventually...")
 
 
 updateReadMe()
