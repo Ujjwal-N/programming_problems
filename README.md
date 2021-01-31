@@ -11,12 +11,13 @@ I will eventually create a showcase of problems.
 * The partial folder contains solutions that did not satisfy all test cases or timed out. 
 * indexer.py automatically updates the following lists by sorting problems based on its [Kattis difficulty](https://open.kattis.com/help/ranklist)
 * diff.txt stores the difficulties of problems after scraping the problem's webpage
-## Problems Solved Completely(11)
+## Problems Solved Completely(12)
 * [reconnaissance](https://open.kattis.com/problems/reconnaissance), difficulty: 3.8
 * [tgif](https://open.kattis.com/problems/tgif), difficulty: 3.1
 * [kolone](https://open.kattis.com/problems/kolone), difficulty: 2.7
 * [cokolada](https://open.kattis.com/problems/cokolada), difficulty: 2.3
 * [moscowdream](https://open.kattis.com/problems/moscowdream), difficulty: 1.9
+* [vauvau](https://open.kattis.com/problems/vauvau), difficulty: 1.8
 * [parking](https://open.kattis.com/problems/parking), difficulty: 1.8
 * [marko](https://open.kattis.com/problems/marko), difficulty: 1.8
 * [keytocrypto](https://open.kattis.com/problems/keytocrypto), difficulty: 1.8
