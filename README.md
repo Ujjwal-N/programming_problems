@@ -24,12 +24,13 @@ I will eventually create a showcase of problems.
 * [boatparts](https://open.kattis.com/problems/boatparts), difficulty: 1.5
 * [modulo](https://open.kattis.com/problems/modulo), difficulty: 1.4
 * [planina](https://open.kattis.com/problems/planina), difficulty: 1.3
-## Problems Solved Partially(6)
+## Problems Solved Partially(7)
 * [driver](https://open.kattis.com/problems/driver), difficulty: 3.9
 * [farey](https://open.kattis.com/problems/farey), difficulty: 3.7
 * [decisions](https://open.kattis.com/problems/decisions), difficulty: 3.2
 * [icpcteamselection](https://open.kattis.com/problems/icpcteamselection), difficulty: 2.8
 * [bard](https://open.kattis.com/problems/bard), difficulty: 2.5
 * [knightjump](https://open.kattis.com/problems/knightjump), difficulty: 2.4
+* [ants](https://open.kattis.com/problems/ants), difficulty: 2.4
 
 The problems in the "partially solved list" will move to the "completely solved list" eventually...

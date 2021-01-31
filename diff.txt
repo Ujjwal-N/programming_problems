@@ -16,3 +16,4 @@ bard,2.5
 driver,3.9
 farey,3.7
 vauvau,1.8
+ants,2.4
