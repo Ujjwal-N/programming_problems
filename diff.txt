@@ -17,3 +17,4 @@ driver,3.9
 farey,3.7
 vauvau,1.8
 ants,2.4
+freefood,1.6
