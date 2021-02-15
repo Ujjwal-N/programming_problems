@@ -11,12 +11,13 @@ I will eventually create a showcase of problems.
 * The partial folder contains solutions that did not satisfy all test cases or timed out. 
 * indexer.py automatically updates the following lists by sorting problems based on its [Kattis difficulty](https://open.kattis.com/help/ranklist)
 * diff.txt stores the difficulties of problems after scraping the problem's webpage
-## Problems Solved Completely(17)
+## Problems Solved Completely(18)
 * [highscore2](https://open.kattis.com/problems/highscore2), difficulty: 5.7
 * [reconnaissance](https://open.kattis.com/problems/reconnaissance), difficulty: 3.8
 * [tgif](https://open.kattis.com/problems/tgif), difficulty: 3.1
 * [icpcteamselection](https://open.kattis.com/problems/icpcteamselection), difficulty: 2.8
 * [kolone](https://open.kattis.com/problems/kolone), difficulty: 2.7
+* [bard](https://open.kattis.com/problems/bard), difficulty: 2.5
 * [knightjump](https://open.kattis.com/problems/knightjump), difficulty: 2.4
 * [cokolada](https://open.kattis.com/problems/cokolada), difficulty: 2.3
 * [moscowdream](https://open.kattis.com/problems/moscowdream), difficulty: 1.9
@@ -29,12 +30,11 @@ I will eventually create a showcase of problems.
 * [modulo](https://open.kattis.com/problems/modulo), difficulty: 1.4
 * [simonsays](https://open.kattis.com/problems/simonsays), difficulty: 1.4
 * [planina](https://open.kattis.com/problems/planina), difficulty: 1.3
-## Problems Solved Partially(6)
+## Problems Solved Partially(5)
 * [largesttriangle](https://open.kattis.com/problems/largesttriangle), difficulty: 7.3
 * [driver](https://open.kattis.com/problems/driver), difficulty: 3.9
 * [farey](https://open.kattis.com/problems/farey), difficulty: 3.7
 * [decisions](https://open.kattis.com/problems/decisions), difficulty: 3.2
-* [bard](https://open.kattis.com/problems/bard), difficulty: 2.5
 * [ants](https://open.kattis.com/problems/ants), difficulty: 2.4
 
 The problems in the "partially solved list" will move to the "completely solved list" eventually...
