@@ -11,21 +11,24 @@ def main():
     timeSpentOnGate = []
     loopTime = 0
     for i in range(gates):
+        # time until current gate opens
         openingTime = openTimes[i] - i - loopTime
+        # at least one hour will be spent on current gate
         timeSpentOnGate.append(1)
-        if(openingTime <= 0):  # no need to loop
-            if(i == (gates - 1)):
+        if(openingTime <= 0):  # current gate is open
+            if(i == (gates - 1)):  # if it is the last one, we're done!
                 break
-            if(prices[i] < cheapestPrice):
+            if(prices[i] < cheapestPrice):  # check if current gate's price is the cheapest
                 cheapestPrice = prices[i]
-                cheapestRoad = i
+                cheapestRoad = i  # finding cheapeast gate to loop through to minimize cost
         else:
             openingTime = openingTime if (
-                openingTime % 2 == 0) else openingTime + 1
+                openingTime % 2 == 0) else openingTime + 1  # number of hours spent must be odd(1 is already added so this calculation should return lowest even number) since we're going back and forth. full loop must always be even
             timeSpentOnGate[cheapestRoad] += openingTime
-            loopTime += openingTime
+            loopTime += openingTime  # i + loopTime is the total time spent so far
     retInt = 0
     for j in range(len(prices)):
+        # calculates and returns total cost of traveling
         retInt += prices[j] * timeSpentOnGate[j]
     print(retInt)
     return
